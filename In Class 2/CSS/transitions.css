@@ -1,0 +1,63 @@
+h1{
+  width: 50px;
+  height: 50px;
+  background: black;
+  transition-property: height;
+  transition-duration: 4s;
+}
+h1:hover{
+  height: 300px;
+  background: grey;
+}
+h2{
+  width: 50px;
+  height: 50px;
+  background: blue;
+  transition-property: width;
+  transition-duration: 2s;
+}
+h2:hover{
+  width: 300px;
+  background: salmon;
+}
+h3{
+  width: 50px;
+  height: 50px;
+  background: red;
+  transition: width 3s, height 3s;
+}
+h3:hover{
+  width: 300px;
+  height: 300px;
+  background: maroon;
+}
+h4{
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  transition: width 5s, height 5s, transform 5s;
+}
+h4:hover{
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+  background: teal;
+}
+/*Everything below this commment should control my animation*/
+div{
+  width: 100px;
+  height: 100px;
+  background: pink;
+  position: relative;
+  animation-name: Mover;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@@keyframes identifier {
+  0%  {background-color: pink; left: 0px; top: 0px;}
+  25% {background-color: orange; left: 500px; top: 0px}
+  50% {background-color: teal; left: 500px; top: 500px}
+  75% {background-color: maroon; left: 0px; top: 500px}
+  100%  {background-color: salmon; left: 0px; top: 0px}
+}
